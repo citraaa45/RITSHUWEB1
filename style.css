@@ -3,7 +3,8 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    min-height: 100vh;
+    max-width: 1300px;
+    max-height: 1300px;
 }
 .allwrap {
     width: 100%;
@@ -105,6 +106,7 @@ body, html {
     display: flex; 
     gap: 10px; 
     align-items: center;
+    margin-right: -100px;
 }
 .navbar-button:hover {
   background-color: rgb(242, 198, 88);
@@ -122,12 +124,11 @@ body, html {
 
 .wrapcontent {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 100px;
     padding: 10px;
     flex-wrap: wrap;
-    margin-top: 10px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .product-area {
@@ -221,6 +222,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .icons {
     display: flex;
