@@ -100,6 +100,11 @@ const product = [
       cart.forEach((item, index) => {
         pesan += `${index + 1}. ${item.name} x ${item.quantity}\n`;
       });
+
+      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      pesan += `Total: Rp${total.toLocaleString()}`;
+      
       const encoded = encodeURIComponent(pesan);
       window.open(`https://wa.me/6289650022527?text=${encoded}`, "_blank");
+
     }
