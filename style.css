@@ -9,6 +9,7 @@ body, html {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    max-width: 2000 px;
     background-color: rgb(255, 236, 153);
 }
 .parent {
